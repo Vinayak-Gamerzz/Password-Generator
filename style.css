@@ -107,3 +107,167 @@ input[type="range"] {
     background: #3b963f;
 
 }
+
+.strength-box {
+
+    width:100%;
+    height: 12px;
+    background: #f4f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0 8px;
+
+}
+
+.strength-bar {
+
+    width: 0%;
+    height: 100%;
+    background: red;
+    transition: .4s;
+
+}
+
+#strengthText {
+
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+#showBtn{
+    width:55px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.display button{
+    width:55px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.themes {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.theme{
+
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.light{
+
+    background: white;
+    border: 2px solid #999;
+
+}
+
+.dark {
+
+    background: #222;
+
+}
+
+.blue {
+
+    background: lightblue;
+
+}
+
+.purple {
+
+    background: lavender;
+
+}
+
+.hacker {
+
+    background: #1c4a1c;
+
+}
+
+body.light{
+
+    background:#f2f2f2;
+
+}
+
+body.dark{
+
+    background:#121212;
+
+}
+
+body.blue{
+
+    background:#0d47a1;
+
+}
+
+body.purple{
+
+    background:#4a148c;
+
+}
+
+body.hacker{
+
+    background:black;
+
+}
+
+body.dark .container{
+
+    background:#2d2d2d;
+    color:white;
+
+}
+
+body.blue .container{
+
+    background:#1976d2;
+    color:white;
+
+}
+
+body.purple .container{
+
+    background:#6a1b9a;
+    color:white;
+
+}
+
+body.hacker .container{
+
+    background:#111;
+    color:#00ff00;
+    border:2px solid #00ff00;
+
+}
+
+#historyList{
+    margin-top:15px;
+    list-style:none;
+    max-height:180px;
+    overflow-y:auto;
+}
+
+#historyList li{
+    background:#f2f2f2;
+    padding:10px;
+    margin:8px 0;
+    border-radius:8px;
+    word-break:break-all;
+}   `

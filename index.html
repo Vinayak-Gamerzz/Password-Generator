@@ -22,9 +22,11 @@
 
                 <div class="display">
 
-                    <input type="text" id="password" readonly>
+                    <input type="password" id="password" readonly>
 
-                    <button id="copyBtn">Copy</button>
+                    <button id="showBtn">👁️</button>
+
+                    <button id="copyBtn">📋</button>
 
                 </div>
 
@@ -70,7 +72,29 @@
 
                 </div>
 
+                <div class="strength-box">
+
+                    <div class="strength-bar" id="strengthBar"></div>
+
+                </div>
+
+                <p id="strengthText">Strength: Weak</p>
+
                 <button id="generateBtn">Generate Password</button>
+
+            <h2>Choose Theme</h2>
+
+                <div class="themes">
+
+                    <button class="theme light" data-theme="light"></button>
+
+                    <button class="theme hacker" data-theme="hacker"></button>
+
+                </div>
+
+            <h3>Password History</h3>
+
+                <ul id="historyList"></ul>
 
         </div>
 
