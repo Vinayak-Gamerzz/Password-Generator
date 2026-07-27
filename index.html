@@ -30,6 +30,16 @@
 
                 </div>
 
+                <div class="category">
+
+                    <button class="cat active" data-type="random">Random</button>
+
+                    <button class="cat" data-type="pin">PIN</button>
+
+                    <button class="cat" data-type="passphrase">Passphrase</button>
+
+                </div>
+
                 <div class="setting">
 
                     <label>Password Length</label>
@@ -70,6 +80,20 @@
 
                     </label>
 
+                    <label>
+
+                        <input type="checkbox" id="excludeSimilar">
+                        Exclude Similar Characters (I l 1 O 0)
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" id="noRepeat">
+                        No Repeated Characters
+
+                    </label>
+
                 </div>
 
                 <div class="strength-box">
@@ -79,6 +103,30 @@
                 </div>
 
                 <p id="strengthText">Strength: Weak</p>
+
+                <div class="stats">
+
+                    <p>Uppercase : <span id="upperCount">0</span></p>
+
+                    <p>Lowercase : <span id="lowerCount">0</span></p>
+
+                    <p>Numbers : <span id="numberCount">0</span></p>
+
+                    <p>Symbols : <span id="symbolCount">0</span></p>
+
+                    <p>Length : <span id="lengthCount">0</span></p>
+
+                    <p>Entropy : <span id="entropy">0 bits</span></p>
+
+                </div>
+
+                <div class="crack-box">
+
+                    <h3>Estimated Crack Time</h3>
+
+                    <p id="crackTime">Instantly</p>
+
+                </div>
 
                 <button id="generateBtn">Generate Password</button>
 
@@ -97,6 +145,8 @@
                 <ul id="historyList"></ul>
 
         </div>
+
+        <div id="toast"></div>
 
         <script src="script.js"></script>
 

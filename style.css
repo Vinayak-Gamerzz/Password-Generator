@@ -24,6 +24,7 @@ body {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    margin-top: 500px;
 
 }
 
@@ -271,3 +272,155 @@ body.hacker .container{
     border-radius:8px;
     word-break:break-all;
 }   
+
+.theme.active{
+    transform: scale(1.2);
+    border:3px solid white;
+    box-shadow:0 0 12px rgba(255,255,255,.7);
+}
+
+#toast{
+
+    position:fixed;
+    top:25px;
+    right:25px;
+    background:#222;
+    color:white;
+    padding:15px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    opacity:0;
+    transform:translateY(-20px);
+    transition:.35s;
+    pointer-events:none;
+    z-index:9999;
+
+}
+
+#toast.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+body.hacker #toast{
+
+    background:#00ff00;
+    color:black;
+
+}
+
+.stats{
+
+    margin:20px 0;
+    padding:15px;
+    border-radius:10px;
+    background:#f3f3f3;
+
+}
+
+.stats p{
+
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+    font-size:15px;
+
+}
+
+body.dark .stats,
+body.blue .stats,
+body.purple .stats{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+body.hacker .stats{
+
+    background:#000;
+    border:1px solid #00ff00;
+
+}
+
+.crack-box{
+
+    margin:20px 0;
+    padding:15px;
+    border-radius:10px;
+    background:#f3f3f3;
+    text-align:center;
+
+}
+
+.crack-box h3{
+
+    margin-bottom:10px;
+
+}
+
+#crackTime{
+
+    font-size:18px;
+    font-weight:bold;
+    color:#4CAF50;
+
+}
+
+body.dark .crack-box,
+body.blue .crack-box,
+body.purple .crack-box{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+body.hacker .crack-box{
+
+    background:#000;
+    border:1px solid #00ff00;
+
+}
+
+.category{
+
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+
+}
+
+.category button{
+
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#ddd;
+    transition:.3s;
+
+}
+
+.category button.active{
+
+    background:#4CAF50;
+    color:white;
+
+}
+
+body.hacker .category button{
+
+    background:#111;
+    color:#00ff00;
+    border:1px solid #00ff00;
+
+}
+
+body.hacker .category button.active{
+
+    background:#00ff00;
+    color:black;
+
+}
